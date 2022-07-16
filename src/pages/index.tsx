@@ -20,6 +20,7 @@ const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({ liff,
           <div>
             <p>LIFF init succeeded.</p>
             <p>{JSON.stringify(liff.getContext)}</p>
+            <p>#2</p>
           </div>
         )}
         {liffError && (
