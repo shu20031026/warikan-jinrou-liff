@@ -3,13 +3,26 @@
 ## API仕様
 
 ```ts
+//GET /init_data?groupId=@@@@@
+{
+  groupId: string,
+  groupName: string,
+  user:[
+    {
+      name: string,
+      id: string,
+      icon: string
+    }
+  ]
+}
+
 // POST /payment 
 {
   groupId: string,
   totalAmount: number,
   totalOffer: number,
   participant: number,
-  [
+  result:[
     {
       userId: string,
       userName: string,
