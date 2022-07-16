@@ -21,7 +21,7 @@
   groupId: string,
   totalAmount: number,
   totalOffer: number,
-  participant: number,
+  participantCount: number,
   result:[
     {
       userId: string,
