@@ -20,7 +20,7 @@
 {
   groupId: string,
   totalAmount: number,
-  totalOffer: number,
+  totalOfferAmount: number,
   participantCount: number,
   result:[
     {
