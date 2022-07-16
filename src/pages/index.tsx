@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import styles from "~/styles/Home.module.css"
 
 const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({ liff, liffError }) => {
+  console.log(liff)
   return (
     <div>
       <Head>
@@ -19,7 +20,7 @@ const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({ liff,
         {liff && (
           <div>
             <p>LIFF init succeeded.</p>
-            <p>{JSON.stringify(liff.getContext)}</p>
+            <p>{JSON.stringify(liff.getContext())}</p>
             <p>#2</p>
           </div>
         )}
