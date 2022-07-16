@@ -1,3 +1,41 @@
+# 割り勘人狼
+
+## API仕様
+
+```ts
+//GET /init_data?groupId=@@@@@
+{
+  groupId: string,
+  groupName: string,
+  user:[
+    {
+      name: string,
+      id: string,
+      icon: string
+    }
+  ]
+}
+
+// POST /payment 
+{
+  groupId: string,
+  totalAmount: number,
+  totalOffer: number,
+  participant: number,
+  result:[
+    {
+      userId: string,
+      userName: string,
+      payment: {
+        offerAmount: number,
+        determinedAmount: number
+      }
+    }
+  ]
+}
+```
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
