@@ -16,7 +16,8 @@ const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({
       </Head>
 
       <main className={styles.main}>
-        <h1>create-liff-app</h1>
+        <h1 className="text-bg-500">create-liff-app</h1>
+        <p className="font-bold">hoge</p>
         {liff && <p>LIFF init succeeded.</p>}
         {liffError && (
           <>
