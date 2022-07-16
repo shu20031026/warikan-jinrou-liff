@@ -1,7 +1,7 @@
 import type { Liff } from "@line/liff";
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "~/styles/Home.module.css";
 
 const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({
   liff,
@@ -16,7 +16,8 @@ const Home: NextPage<{ liff: Liff | null; liffError: string | null }> = ({
       </Head>
 
       <main className={styles.main}>
-        <h1>create-liff-app</h1>
+        <h1 className="text-bg-500">create-liff-app</h1>
+        <p className="font-bold">hoge</p>
         {liff && <p>LIFF init succeeded.</p>}
         {liffError && (
           <>
